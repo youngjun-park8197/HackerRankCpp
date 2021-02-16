@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int main() {
+    // Complete the code.
+    string Array[10] = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+    
+    int First, Last;
+    cin >> First >> Last;
+    
+    for(int index = First; index <= Last; index++)
+    {
+        if(index > 9)
+        {
+            index % 2 == 0 ? cout << "even\n" : cout << "odd\n";
+        }
+        
+        else
+        {
+            cout << Array[index] << endl;
+        }
+    }
+    
+    return 0;
+}
