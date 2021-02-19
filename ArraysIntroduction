@@ -1,0 +1,27 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int inputNumber;
+    cin >> inputNumber;
+    
+    int Array[inputNumber];
+    
+    for(int index = 0; index < inputNumber; index++)
+    {
+        cin >> Array[index];
+    }
+    
+    for(int index = inputNumber - 1; index >= 0; index--)
+    {
+        cout << Array[index] << " ";
+    }
+    
+    return 0;
+}
