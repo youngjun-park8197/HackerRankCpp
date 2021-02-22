@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	// Complete the program
+    string first, second, ch_first, ch_second, sum, temp;
+    
+    cin >> first;
+    cin >> second;
+    
+    ch_first = first;
+    ch_second = second;
+    
+    sum = first + second;
+    
+    temp[0] = ch_first[0];
+    ch_first[0] = ch_second[0];
+    ch_second[0] = temp[0];
+    
+    cout << first.size() << " " << second.size() << endl;
+    cout << sum << endl;
+    cout << ch_first << " " << ch_second;
+    
+    return 0;
+}
