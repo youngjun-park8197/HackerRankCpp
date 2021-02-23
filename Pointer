@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void update(int *a,int *b) {
+    // Complete this function  
+    int temp = *a + *b;       // *a = 4, *b = 5 and store sum value in temp
+    *b = std::abs(*a - *b);   // change the value of *b with abolute *b = 5 -> *b = 1(abs 4-5)
+    *a = temp;                // lastly store the value of temp = 9 in *a
+}
+
+int main() {
+    int a, b;
+    int *pa = &a, *pb = &b;
+    
+    scanf("%d %d", &a, &b);
+    update(pa, pb);
+    printf("%d\n%d", a, b);
+
+    return 0;
+}
