@@ -12,10 +12,6 @@ struct Student {
   string standard;
 };
 
-/*
-    add code for struct here.
-*/
-
 int main() {
     Student st;
     
