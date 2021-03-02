@@ -1,0 +1,29 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int vecSize, inputNum;
+    cin >> vecSize;
+    vector<int> newVec;
+    
+    for(int i = 0; i < vecSize; i++)
+    {
+        cin >> inputNum;
+        newVec.push_back(inputNum);
+    }
+    
+    sort(newVec.begin(), newVec.end());
+    
+    for(int i = 0; i < vecSize; i++)
+    {
+        cout << newVec[i] << " ";
+    }
+    
+    return 0;
+}
