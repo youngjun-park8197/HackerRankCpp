@@ -7,10 +7,9 @@ using namespace std;
 
 
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
     int vecSize, inputNum; 
-    cin >> vecSize;             // define vector length
-    vector<int> newVec;         // create vector(name : newVec) 
+    cin >> vecSize;                     // define vector length
+    vector<int> newVec;                 // create vector(name : newVec) 
     
     for(int i = 0; i < vecSize; i++)    // from 0 to vector length
     {
