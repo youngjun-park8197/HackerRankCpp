@@ -1,0 +1,36 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int vecSize, inputNum, delIndexA, delIndexB;
+    cin >> vecSize;
+    
+    vector<int> newVec(vecSize);
+    
+    for(int index = 0; index < vecSize; index++)
+    {
+        cin >> inputNum;
+        newVec[index] = inputNum;
+    }
+       
+    cin >> delIndexA;
+    newVec.erase(newVec.begin()+delIndexA-1);    
+    
+    cin >> delIndexA >> delIndexB;
+    newVec.erase(newVec.begin()+delIndexA-1, newVec.begin()+delIndexB-1);
+    
+    cout << newVec.size() << endl;
+    
+    for(int index = 0; index < newVec.size(); index++)
+    {
+        cout << newVec[index] << " ";
+    }
+    
+    return 0;
+}
